@@ -200,6 +200,84 @@ void print11(int n)
     }
 }
 */
+/*
+void print12(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            cout << j;
+        }
+        for (int j = 1; j <= 2 * n - 2 * i; j++)
+        {
+            cout << " ";
+        }
+        for (int j = 1; j <= i; j++)
+        {
+            cout << j;
+        }
+        cout << endl;
+    }
+}
+*/
+/*
+void print13(int n)
+{
+    int k = 1;
+
+    for (int i = 1; i <= n; i++)
+    {
+
+        for (int j = 1; j <= i; j++)
+        {
+            cout << k << " ";
+            k = k + 1;
+        }
+        cout << endl;
+    }
+}
+*/
+/*
+void print14(int n)
+{
+    for (int i = 0; i <= n; i++)
+    {
+        for (char ch = 'A'; ch <= 'A' + i; ch++)
+        {
+            cout << ch;
+        }
+        cout << endl;
+    }
+}
+*/
+/*
+void print15(int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        for (char ch = 'A'; ch < 'A' + n - i; ch++)
+        {
+            cout << ch;
+        }
+        cout << endl;
+    }
+}
+*/
+/*
+void print16(int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        char ch = 'A' + i;
+        for (int j = 0; j <= i; j++)
+        {
+            cout << ch;
+                }
+        cout << endl;
+    }
+}
+*/
 int main()
 {
     // print1(10);
@@ -214,5 +292,10 @@ int main()
     // print10(5);
     // print10(5);
     // print11(5);
+    // print12(5);
+    // print13(5);
+    // print14(5);
+    // print15(5);
+    // print16(5);
     return 0;
 }
