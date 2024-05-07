@@ -278,6 +278,121 @@ void print16(int n)
     }
 }
 */
+/*
+void print17(int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n - i - 1; j++)
+        {
+            cout << " ";
+        }
+        char ch = 'A';
+        int breakpoint = (2 * i + 1) / 2;
+        for (int j = 1; j <= 2 * i + 1; j++)
+        {
+            cout << ch;
+            if (j <= breakpoint)
+            {
+                ch++;
+            }
+            else
+            {
+                ch--;
+            }
+        }
+        for (int j = 0; j < n - i - 1; j++)
+        {
+            cout << " ";
+        }
+        cout << endl;
+    }
+}
+*/
+/*
+void print18(int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        for (char ch = 'E' - i; ch <= 'E'; ch++)
+        {
+            cout << ch;
+        }
+        cout << endl;
+    }
+}
+*/
+/*
+void print19(int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n - i; j++)
+        {
+            cout << "*";
+        }
+        for (int j = 0; j < i * 2; j++)
+        {
+            cout << " ";
+        }
+        for (int j = 0; j < n - i; j++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }
+}
+void print191(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            cout << "*";
+        }
+        for (int j = 0; j < 2 * n - 2 * i; j++)
+        {
+            cout << " ";
+        }
+        for (int j = 1; j <= i; j++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }
+}
+*/
+/*
+void print20(int n)
+{
+    for (int i = 1; i <= 2 * n - 1; i++)
+    {
+        int space = 2 * n - 2 * i;
+        int stars = i;
+        if (i > n)
+        {
+            stars = 2 * n - i;
+        }
+        for (int j = 1; j <= stars; j++)
+        {
+            cout << "*";
+        }
+        if (i > n)
+        {
+            space = 2 * i - 2 * n;
+        }
+        for (int j = 1; j <= space; j++)
+        {
+            cout << " ";
+        }
+        for (int j = 1; j <= stars; j++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }
+}
+*/
 int main()
 {
     // print1(10);
@@ -297,5 +412,10 @@ int main()
     // print14(5);
     // print15(5);
     // print16(5);
+    // print17(5);
+    // print18(5);
+    // print19(5);
+    // print191(5);
+    // print20(5);
     return 0;
 }
