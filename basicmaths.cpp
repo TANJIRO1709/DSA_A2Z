@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 /*
@@ -53,19 +54,34 @@ int main()
     int x = count(7789);
     cout << x;
 */
-    int cnt = 0;
-    int N;
-    cin >> N;
-    while (N > 0)
+    cout << "Enter a number: ";
+    int number;
+    cin >> number;
+
+    // Store the number in a temporary variable for further processing
+    int temp = number;
+
+    // Vector to store the digits that evenly divide the number
+    vector<int> divisors;
+
+    // Loop through each digit of the number
+    while (temp != 0)
     {
-        int last_digit = N % 10;
-        if ((N / last_digit) % 2 == 0)
+        // Extract the last digit
+        int digit = temp % 10;
+
+        // Check if the digit is not zero and divides the number evenly
+        if (digit != 0 && number % digit == 0)
         {
-            cnt += 1;
+            // Add the digit to the vector
+            divisors.push_back(digit);
         }
 
-        N = N / 10;
+        // Move to the next digit
+        temp /= 10;
     }
-    cout << cnt;
+
+    // Output the count of digits that evenly divide the number
+    cout << number << ": " << divisors.size() << endl;
     return 0;
 }
