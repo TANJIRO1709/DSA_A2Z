@@ -85,5 +85,15 @@ int main()
         // Output the count of digits that evenly divide the number
         cout << number << ": " << divisors.size() << endl;
         */
+    int n;
+    cin >> n;
+    int revN = 0;
+    while (n > 0)
+    {
+        int lastDigit = n % 10;
+        revN = revN * 10 + lastDigit;
+        n = n / 10;
+    }
+    cout << revN << endl;
     return 0;
 }
