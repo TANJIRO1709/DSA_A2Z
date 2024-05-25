@@ -1,22 +1,43 @@
 #include <iostream>
 using namespace std;
 
-// Define the function with appropriate parameter types
-void name(int i, int n)
+/*
+void name(int n, int i)
 {
-    if (i > n)
+    if (n < i)
     {
         return;
     }
-    cout << "Hello World" << endl;
+    cout << n << endl;
 
-    name(i + 1, n);
+    name(n - 1, i);
 }
-
+*/
+/*
+void f(int i, int sum)
+{
+    if (i < 1)
+    {
+        cout << sum << endl;
+        return;
+    }
+    f(i - 1, sum + i);
+}
+*/
+voif fn(int n)
+{
+    if (n == 0)
+    {
+        return 0;
+    }
+    return n + fn(n - 1);
+}
 int main()
 {
     int n;
-    cin >> n;   // Correct the syntax for reading input from the user
-    name(1, n); // Call the function with the initial value of 1
+    cin >> n;
+    cout << fn(n);
+    // f(n, 0);
+    //  name(n, 1);
     return 0;
 }
