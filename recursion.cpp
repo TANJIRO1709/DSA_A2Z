@@ -24,7 +24,7 @@ void f(int i, int sum)
     f(i - 1, sum + i);
 }
 */
-voif fn(int n)
+int fn(int n)
 {
     if (n == 0)
     {
