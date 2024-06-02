@@ -3,6 +3,7 @@ using namespace std;
 int main()
 {
     // KADANE'S ALGORITHM
+    // cp
     int n;
     cin >> n;
     int a[n];
